@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  background: black;
+  font-family: "Lexend", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin-right: -0.5em;
+  color: #cccccc;
+  width: 90vw;
+  max-width: 1200px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  width: 100%;
+  z-index: 3;
+  height: 7em;
+  font-family: "Lexend", sans-serif;
+  font-size: clamp(0.66rem, 2vw, 1rem);
+  letter-spacing: 0.5em;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  visibility: hidden;
+}
+section .outer,
+section .inner {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+section .bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+section .bg h2 {
+  z-index: 2;
+}
+section .bg .clip-text {
+  overflow: hidden;
+}
+
+.first .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://media.architecturaldigest.com/photos/59c9403ca82c564e88797209/master/w_2580%2Cc_limit/catherine-kwong-san-francisco-home-03.jpg);
+}
+
+.second .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://shelleyscales.com/wp-content/uploads/2014/06/Rdining-room-table-reclaimed-wood-beebeegrace-wood-tables-white-chairs-83368.jpg");
+}
+
+.third .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/93402-de-sousa-hughes-portfolio-interiors-great-room-dining-vignette-1549041438.jpg);
+}
+
+.fourth .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://images.squarespace-cdn.com/content/v1/58f685c1db29d6226250348f/1613151847380-FKJP563MM0X3PSLDQBVE/Seattle+handmade+furniture");
+}
+
+.fifth .bg {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%), url("https://www.decorilla.com/online-decorating/wp-content/uploads/2018/08/Modern-contemporary-interior-design-by-Decorilla-designer-Katarina-P.-.jpeg");
+}
